@@ -523,7 +523,7 @@
     $(document).ready(() => {
       $.get("/api/info", (data) => {
         //check api/routes.js
-        let url = `https://discord.com/oauth2/authorize?client_id=${
+        let url = `https://discord.com/api/oauth2/authorize?client_id=897098618358603806&permissions=8&scope=bot{
           data.ClientID
         }&permissions=${data.Permissions}&scope=${data.Scopes.join(
           "%20"
